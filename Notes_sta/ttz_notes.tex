@@ -1,0 +1,312 @@
+\documentclass[AutoFakeBold]{tstextbook}
+\input{settings.tex}
+\begin{document}
+
+\tsbook{\songti 统计力学笔记}
+{\large \kaishu 陶洋 \ 杨春雨\\
+    千淘万漉虽辛苦，淘尽黄沙始到金。}
+{Ts\TeX tbook}
+{2023}
+{20603}{206--03--2023--01--1}{1.0}
+{USTC}
+{Hefei}
+
+
+
+
+
+%---------------------------------------------------------------------------
+% Chapters
+%---------------------------------------------------------------------------
+\frontmatter
+\chapter*{前言} % (fold)
+\label{cha:前言}
+
+这个笔记的主体部分由2019级陶洋学长完成，我拿到陶洋学长的笔记之后，结合自己在23年春统计力学课程的一些笔记，将其转换成了\LaTeX 代码。结合台湾新竹清华大学林秀豪教授的课程，补充了一点比如玻尔兹曼方程、半导体和相变的朗道唯象理论等我觉得既有用又有趣的内容，同时依据我自己所学方向，增补了一些非平衡态热力学和基于统计力学的分子动力学模拟的概述。
+
+由于我们能力有限（特别是我增补的部分并不是老师上课讲授的内容），不当之处在所难免，如果有任何错误或者不当之处，欢迎通过邮件（\href{mailto:chunyuyang@ustc.edu}{chunyuyang@ustc.edu}）联系我指出，感谢每一份真诚的建议。
+
+完成这份笔记的过程中，许多人指出了我的问题或者与我分享了他们的理解，他们是20级化院彭子骏、王怀宇、禤科材。
+
+
+
+\begin{flushright}
+    \includegraphics[width=0.24\textwidth]{images/signature.png}\\
+    2023年3月于中国科大 
+\end{flushright}
+
+% chapter 前言 (end)
+
+
+%---------------------------------------------------------------------------
+\mainmatter
+%---------------------------------------------------------------------------
+
+\include{chapter/chapter_1.tex}
+%---------------------------------------------------------------------------
+\include{chapter/chapter_2.tex}
+%---------------------------------------------------------------------------
+\include{chapter/chapter_3.tex}
+%---------------------------------------------------------------------------
+\include{chapter/chapter_4.tex}
+%---------------------------------------------------------------------------
+\include{chapter/chapter_5.tex}
+%---------------------------------------------------------------------------
+\chapter{半导体} % (fold)
+\label{cha:半导体}
+\section{Intrinsic Semiconductor \& Extrinsic Semiconductor} % (fold)
+\label{sec:Intrinsic Semiconductor and Extrinsic Semiconductor}
+将Fermi-Dirac分布应用于半导体极大地推动了半导的研究和设计。
+% section Intrinsic Semiconductor & Extrinsic Semiconductor (end)
+\section{PN Junction} % (fold)
+\label{sec:PN Junction}
+% section PN Junction (end)
+\section{Non-equilibrium Semiconductor} % (fold)
+\label{sec:Non-equilibrium Semiconductor}
+% section Non-equilibrium Semiconductor (end)
+% chapter 半导体 (end)
+%---------------------------------------------------------------------------
+\include{chapter/chapter_7.tex}
+%---------------------------------------------------------------------------
+\include{chapter/chapter_8.tex}
+%---------------------------------------------------------------------------
+\include{chapter/chapter_9.tex}
+%---------------------------------------------------------------------------
+\chapter{磁学系统的相变 I} % (fold)
+\label{cha:磁学系统的相变 I}
+\section{Introduction} % (fold)
+\label{sec:Introduction}
+\subsection{问题背景} % (fold)
+\label{sub:问题背景}
+前面我们所了解的统计力学，大多数处于下面的范式之中
+
+\begin{enumerate}\setlength{\itemsep}{0pt}
+    \item 首先计算体系的能谱，对于给定的某一个态$v$，求解$E_v$，$v$在经典力学中指的是相空间中的点，在量子力学中指的是离散的微观态。
+    \item 然后计算配分函数，比如对于正则系综，有\begin{equation}
+              Q=\sum_{v}e^{-\beta E_v}
+          \end{equation}
+    \item 最后利用热力学的有关理论关联到具体的宏观热力学性质。比如常见的热力学函数\begin{equation}
+        F=-kT\ln Q\\
+        \di F = -S\di T -p\di V +\mu \di N
+    \end{equation}
+\end{enumerate}
+
+实际应用中，这一套理论存在两大问题：$E_v$求解困难；$Q$计算困难。此外，我们前面一段时间所讨论的系统都是无相互作用的，这个情况显然也是过于理想化的。从本章开始我们将致力于研究有相互作用的复杂体系。
+
+相变\index{相变}，就是显著的相互作用带来的结果。
+% subsection 问题背景 (end)
+
+\subsection{PVT系统和HMT系统} % (fold)
+\label{sub:PVT系统和HMT系统}
+本章中我们主要讨论磁学系统的相变，这个体系相对陌生，因此我们首先将其和我们较为熟悉的热力学系统的相变类比。
+% subsection PVT系统和HMT系统 (end)
+\subsection{Ising模型和磁学热力学} % (fold)
+\label{sub:Ising模型和磁学热力学}
+
+% subsection Ising模型和磁学热力学  (end)
+
+% section Introduction (end)
+\section{相变现象和Ising模型的解析解} % (fold)
+\label{sec:相变现象和Ising模型的解析解}
+
+% section 相变现象和Ising模型的解析解 (end)
+
+% chapter 磁学系统的相变 I (end)
+\chapter{磁学系统的相变 II} % (fold)
+\label{cha:磁学系统的相变 II}
+\section{关联函数} % (fold)
+\label{sec:关联函数}
+
+% section 关联函数 (end)
+\section{平均场理论} % (fold)
+\label{sec:平均场理论}
+
+% section 平均场理论 (end)
+\section{重整化群方法} % (fold)
+\label{sec:重整化群方法}
+
+% section 重整化群方法 (end)
+% chapter 磁学系统的相变 II (end)
+\chapter{相图} % (fold)
+\label{cha:相图}
+\section{van der Waals方程和气液相变} % (fold)
+\label{sec:van der Waals方程和气液相变}
+
+% section van der Waals方程和气液相变 (end)
+\section{两组分系统} % (fold)
+\label{sec:两组分系统}
+
+% section 两组分系统 (end)
+\section{固液混合物} % (fold)
+\label{sec:固液混合物}
+
+% section 固液混合物 (end)
+\section{习题} % (fold)
+\label{sec:习题12}
+
+% section 习题 (end)
+% chapter 相图 (end)
+\chapter{相变的朗道唯象理论} % (fold)
+\label{cha:相变的朗道唯象理论}
+
+% chapter 相变的朗道唯象理论 (end)
+
+\chapter{经典流体} % (fold)
+\label{cha:经典流体}
+\section{Introduction} % (fold)
+\label{sec:Introduction 14}
+
+% section Introduction (end)
+\section{经典配分函数} % (fold)
+\label{sec:经典配分函数}
+
+% section 经典配分函数 (end)
+\section{约化分布函数和热力学性质求解} % (fold)
+\label{sec:约化分布函数和热力学性质求解}
+
+% section 约化分布函数和热力学性质求解 (end)
+\section{习题} % (fold)
+\label{sec:习题14}
+
+% section 习题 (end)
+% chapter 经典流体 (end)
+%---------------------------------------------------------------------------
+\chapter{非平衡态热力学概述} % (fold)
+\label{cha:非平衡态热力学概述}
+\section{布朗运动和朗之万方程} % (fold)
+\label{sec:布朗运动和朗之万方程}
+
+% section 布朗运动和朗之万方程 (end)
+\section{Boltzman Transport Equation} % (fold)
+\label{sec:Boltzman Transport Equation}
+我们引入相空间中的一个分布函数\begin{equation}
+    f(\bd{r},\bd{p},t)\frac{\di^3\bd{r}\di^3\bd{p}}{(2\pi\hbar)^3}=\# \text{ of particles in }\di^3 \bd{p} \text{ and }\di^3\bd{r}\text{ at time t}
+\end{equation}
+
+如果从量子力学的观点出发，这个结果显然是错的。因为由于不确定关系，我们不可能同时充分了解一个粒子的位置和动量。所以这个分布函数是经典的，但是我们接下来需要用到量子统计的结论，我们把这个方法称为semiclassical regime\index{semiclassical regime}。这个分布函数应该满足归一化条件\begin{equation}
+    \int f(\bd{r},\bd{p},t)\frac{\di^3\bd{r}\di^3\bd{p}}{(2\pi\hbar)^3} =N.
+\end{equation}
+
+量子费米气体可以用Fermi-Dirac分布来描述，所以\begin{equation}
+    f(\bd{r},\bd{p},t)=\frac{1}{e^{(\varepsilon-\mu)/\tau}+1}
+\end{equation}
+我们可以检验一下这个公式的正确性，考虑到Fermi-Dirac分布和位置$\bd{x}$无关，所以\begin{equation}
+    \int f(\bd{r},\bd{p},t)\frac{\di^3\bd{r}\di^3\bd{p}}{(2\pi\hbar)^3}=V\int f(\bd{r},\bd{p},t)\frac{\di^3\bd{p}}{(2\pi\hbar)^3}
+\end{equation}
+在$\tau\to 0$的时候，Fermi-Dirac分布就变成了\begin{equation}
+    f(\bd{r},\bd{p},t)=\begin{cases}
+        1 & \varepsilon>\mu \\
+        0 & \varepsilon<\mu
+    \end{cases}
+\end{equation}
+设费米能级对应的粒子动量为$p_F$，于是\begin{equation}
+    \int f(\bd{r},\bd{p},t)\frac{\di^3\bd{p}}{(2\pi\hbar)^3}=V\cdot \frac{1}{(2\pi \hbar)^3}\cdot 2\cdot \frac{4}{3}\pi {p_F}^{3}=V\cdot \frac{p_F^3}{3\pi^2 \hbar^3}
+\end{equation}
+上式中的系数$2=(2S+1)$，是因为电子的$S=\frac{1}{2}$。考虑到\begin{equation}
+    \varepsilon_F=\frac{\hbar^2}{2m} (3\pi^2 n)^{2/3}=\frac{1}{2m} p_F^2
+\end{equation}
+因此\begin{equation}
+    \int f(\bd{r},\bd{p},t)\frac{\di^3\bd{p}}{(2\pi\hbar)^3}=n\cdot V=N
+\end{equation}
+% section Boltzman Transport Equation (end)
+\section{Fokker-Plank Equation} % (fold)
+\label{sec:Fokker-Plank Equation}
+% section Fokker-Plank Equation (end)
+\section{Lindblad主方程和开放量子系统} % (fold)
+\label{sec:Lindblad主方程和开放量子系统}
+% section Lindblad主方程和开放量子系统 (end)
+\section{习题} % (fold)
+\label{sec:习题15}
+
+% section 习题 (end)
+% chapter 非平衡态热力学概述 (end)
+%---------------------------------------------------------------------------
+\chapter{统计力学中的蒙特卡罗方法} % (fold)
+\label{cha:统计力学中的蒙特卡罗方法}
+
+% chapter 统计力学中的蒙特卡罗方法 (end)
+\chapter{分子力学和粗粒度模型概述} % (fold)
+\label{cha:分子力学模拟和粗粒度模型概述}
+\section{分子动力学概述} % (fold)
+\label{sec:分子动力学概述}
+概括来说，分子动力学模拟可以分为以下几步
+% section 分子动力学概述 (end)
+\section{粗粒度模型方法介绍} % (fold)
+\label{sec:粗粒度模型方法介绍}
+从统计力学的角度，粗粒度模型所做的事情可以用下面的方程来描述：
+\begin{equation}
+    \begin{aligned}
+        \exp \left(-F / k_{\mathrm{B}} T\right) & =\text{const.} \int d \mathbf{x} \exp \left[-V(\mathbf{x}) / k_{\mathrm{B}} T\right]\\
+        & \approx\text { const.' }\int d \mathbf{x}_{\mathrm{CG}} \exp \left[-V_{\mathrm{CG}}\left(\mathbf{x}_{\mathrm{CG}}\right) / k_{\mathrm{B}} T\right]
+    \end{aligned}
+\end{equation}
+
+% section 粗粒度模型方法介绍 (end)
+
+
+\section{程序简介} % (fold)
+\label{sec:程序简介}
+
+% section 程序简介 (end)
+% chapter 分子力学模拟和粗粒度模型概述 (end)
+%---------------------------------------------------------------------------
+%---------------------------------------------------------------------------
+\appendix
+\chapter{数学知识补充} % (fold)
+\label{cha:数学知识补充}
+\section{一些基本的结论} % (fold)
+\label{sec:一些基本的结论}
+\subsection{N维球体的体积和表面积} % (fold)
+\label{sub:N维球体的体积和表面积}
+二维平面中，圆的面积为$\pi r^2$，周长为$2\pi r$，三维空间的球体中，圆的体积为$\frac{4}{3}\pi r^3$，表面积为$4\pi r^2$。
+
+我们容易发现\begin{equation}
+    S=\diff{V}{r}
+\end{equation}
+这也符合于我们的直观，即$\di V=S\di r$。
+
+对于$n$维空间，我们直接考虑在圆心原点的球体
+\begin{equation}
+    x_1^2+x_2^2+\cdots +x_n^2=R^2
+\end{equation}
+于是体积可以表示成对这些坐标的积分\begin{equation}
+    V=\int_{-R}^R \di x_1 \int_{-\sqrt{R^2-x_1^2}}^{\sqrt{R^2-x_1^2}}\di x_2\cdots \int_{-\sqrt{R^2-\sum_{i=1}^{n-1}x_i^2}}^{\sqrt{R^2-\sum_{i=1}^{n-1}x_i^2}} \di x_n
+\end{equation}
+这个积分显然是相当困难，于是我们转变思路，对于$n$维球体，其体积应该正比于$r^n$（显然），于是考虑考虑到圆心距离为$r$的“平面”，其面积为$m (R^2-r^2)^{(n-1)/2}$（$m$为一个常数），因此球体的体积为\begin{equation}
+    V_n=2\int_0^R m(R^2-r^2)^{(n-1)/2} \di r
+\end{equation}
+令$r=R\sin \theta,\ \theta \in [0,\frac{\pi}{2}]$原式即可化为\begin{equation}
+    \begin{aligned}
+        V_n & =2m R^n \int_0^{\frac{\pi}{2}}\cos^{n}\theta\di\theta=\frac{\sqrt{\pi} \Gamma(\frac{n+1}{2})}{2\Gamma(1+\frac{n}{2})} 2m R^2 \\&=\frac{\sqrt{\pi} \Gamma(\frac{n+1}{2})R}{\Gamma(1+\frac{n} {2})}V_{n-1}=\frac{\pi^{n/2}R^{n-1}\Gamma(\frac{3}{2})}{\Gamma(1+\frac{n}{2})} V_1\\
+            & =\frac{\pi^{n/2}R^n}{\Gamma(1+\frac{n}{2})}
+    \end{aligned}
+\end{equation}
+于是$n$维超球体的体积就是\begin{equation}
+    V_n =\frac{\pi^{n/2}R^n}{\Gamma(1+\frac{n}{2})}
+\end{equation}
+% subsection N维球体的体积和表面积 (end)
+% section 一些基本的结论 (end)
+\section{特殊函数} % (fold)
+\label{sec:特殊函数}
+
+% section 特殊函数 (end)
+
+% chapter 数学知识补充 (end)
+%---------------------------------------------------------------------------
+% Bibliography
+%---------------------------------------------------------------------------
+
+\nocite{*}
+\addcontentsline{toc}{chapter}{\textcolor{tssteelblue}{参考文献}}
+
+\bibliography{bibliography}
+
+
+%---------------------------------------------------------------------------
+% Index
+%---------------------------------------------------------------------------
+\addcontentsline{toc}{chapter}{\textcolor{tssteelblue}{索引}}
+
+\printindex
+
+\end{document}

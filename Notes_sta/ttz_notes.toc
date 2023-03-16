@@ -1,0 +1,125 @@
+\contentsline {chapter}{\numberline {1}导言和系综理论基础}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}导言}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}概述}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}遍历性假设}{1}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}系综理论基础}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}概述}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}微正则系综}{2}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.1}{\ignorespaces \bfseries {\large { Detailed Discussion 1.1}}}}{4}{tcb@cnt@Dedis.1.1}%
+\contentsline {subsection}{\numberline {1.2.3}总结}{5}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.1}{\ignorespaces \bfseries {\large {\fangsong 思考题 1.1}}}}{6}{tcb@cnt@refquestion.1.1}%
+\contentsline {section}{\numberline {1.3}Temperature}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}习题}{8}{section.1.4}%
+\contentsline {chapter}{\numberline {2}正则系综和广义系综}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}正则系综}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}正则系综和配分函数}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}均值、涨落和能量的正则分布}{10}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}其他热力学关系}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Gibbs熵公式}{14}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}总结}{15}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}广义系综}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}巨正则系综}{19}{subsection.2.2.1}%
+\contentsline {subsubsection}{巨正则系综的热力学关系}{19}{section*.3}%
+\contentsline {subsubsection}{$N$的巨正则分布}{21}{section*.4}%
+\contentsline {subsubsection}{热力学极限情形}{22}{section*.5}%
+\contentsline {subsection}{\numberline {2.2.2}等温等压系综}{22}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}习题}{23}{section.2.3}%
+\contentsline {chapter}{\numberline {3}量子统计学的表述形式}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}密度矩阵}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}各种统计系综}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}微正则系综}{26}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}正则系综}{26}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}巨正则系综}{26}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Examples}{27}{section.3.4}%
+\contentsline {subsubsection}{1.磁场中的一个电子}{27}{section*.6}%
+\contentsline {subsubsection}{2.三维势箱中的一个自由粒子}{27}{section*.7}%
+\contentsline {section}{\numberline {3.5}习题}{27}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Particles I (Theory)}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{28}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}无关联系统}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}配分函数因子化}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}全同粒子}{31}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}量子统计理论}{31}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Bose-Einstein统计和Fermi-Dirac统计}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}经典极限}{34}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}巨正则系综的应用}{35}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}习题}{36}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Particles II (Application)}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Photon and Phonon}{37}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}黑体辐射}{37}{subsection.5.1.1}%
+\contentsline {subsubsection}{波动性描述}{37}{section*.8}%
+\contentsline {subsubsection}{粒子性描述}{38}{section*.9}%
+\contentsline {subsection}{\numberline {5.1.2}声子}{41}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}经典理想气体}{44}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}平动拆分}{44}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}无结构经典理想气体}{45}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}单原子和双原子理想气体分子}{45}{subsection.5.2.3}%
+\contentsline {subsubsection}{电子与核运动的分离}{45}{section*.10}%
+\contentsline {subsubsection}{状态拆分}{46}{section*.11}%
+\contentsline {subsubsection}{振动配分函数}{46}{section*.12}%
+\contentsline {subsubsection}{转动配分函数}{46}{section*.13}%
+\contentsline {subsubsection}{总配分函数}{46}{section*.14}%
+\contentsline {subsection}{\numberline {5.2.4}多原子分子气体}{47}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}习题}{47}{section.5.3}%
+\contentsline {chapter}{\numberline {6}半导体}{48}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Intrinsic Semiconductor \& Extrinsic Semiconductor}{48}{section.6.1}%
+\contentsline {section}{\numberline {6.2}PN Junction}{48}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Non-equilibrium Semiconductor}{48}{section.6.3}%
+\contentsline {chapter}{\numberline {7}气相化学平衡}{49}{chapter.7}%
+\contentsline {section}{\numberline {7.1}导言}{49}{section.7.1}%
+\contentsline {section}{\numberline {7.2}具体分析}{49}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Examples}{51}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}\ce {Na}的双聚}{51}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}\ce {H2}和\ce {I2}反应}{51}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}习题}{51}{section.7.4}%
+\contentsline {chapter}{\numberline {8}自由电子气}{52}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{52}{section.8.1}%
+\contentsline {section}{\numberline {8.2}统计分析}{52}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}0K的情形}{53}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}非0K的情形}{54}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}习题}{57}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Bose-Einstein凝聚}{58}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{58}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Bose-Einstein凝聚}{59}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Example:\ce {{}^4He}}{60}{section.9.3}%
+\contentsline {section}{\numberline {9.4}习题}{60}{section.9.4}%
+\contentsline {chapter}{\numberline {10}磁学系统的相变 I}{61}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{61}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}问题背景}{61}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}PVT系统和HMT系统}{61}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Ising模型和磁学热力学}{61}{subsection.10.1.3}%
+\contentsline {section}{\numberline {10.2}相变现象和Ising模型的解析解}{61}{section.10.2}%
+\contentsline {chapter}{\numberline {11}磁学系统的相变 II}{62}{chapter.11}%
+\contentsline {section}{\numberline {11.1}关联函数}{62}{section.11.1}%
+\contentsline {section}{\numberline {11.2}平均场理论}{62}{section.11.2}%
+\contentsline {section}{\numberline {11.3}重整化群方法}{62}{section.11.3}%
+\contentsline {chapter}{\numberline {12}相图}{63}{chapter.12}%
+\contentsline {section}{\numberline {12.1}van der Waals方程和气液相变}{63}{section.12.1}%
+\contentsline {section}{\numberline {12.2}两组分系统}{63}{section.12.2}%
+\contentsline {section}{\numberline {12.3}固液混合物}{63}{section.12.3}%
+\contentsline {section}{\numberline {12.4}习题}{63}{section.12.4}%
+\contentsline {chapter}{\numberline {13}相变的朗道唯象理论}{64}{chapter.13}%
+\contentsline {chapter}{\numberline {14}经典流体}{65}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Introduction}{65}{section.14.1}%
+\contentsline {section}{\numberline {14.2}经典配分函数}{65}{section.14.2}%
+\contentsline {section}{\numberline {14.3}约化分布函数和热力学性质求解}{65}{section.14.3}%
+\contentsline {section}{\numberline {14.4}习题}{65}{section.14.4}%
+\contentsline {chapter}{\numberline {15}非平衡态热力学概述}{66}{chapter.15}%
+\contentsline {section}{\numberline {15.1}布朗运动和朗之万方程}{66}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Boltzman Transport Equation}{66}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Fokker-Plank Equation}{67}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Lindblad主方程和开放量子系统}{67}{section.15.4}%
+\contentsline {section}{\numberline {15.5}习题}{67}{section.15.5}%
+\contentsline {chapter}{\numberline {16}统计力学中的蒙特卡罗方法}{68}{chapter.16}%
+\contentsline {chapter}{\numberline {17}分子力学和粗粒度模型概述}{69}{chapter.17}%
+\contentsline {section}{\numberline {17.1}分子动力学概述}{69}{section.17.1}%
+\contentsline {section}{\numberline {17.2}粗粒度模型方法介绍}{69}{section.17.2}%
+\contentsline {section}{\numberline {17.3}程序简介}{69}{section.17.3}%
+\contentsline {chapter}{\numberline {A}数学知识补充}{70}{appendix.A}%
+\contentsline {section}{\numberline {A.1}一些基本的结论}{70}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}N维球体的体积和表面积}{70}{subsection.A.1.1}%
+\contentsline {section}{\numberline {A.2}特殊函数}{71}{section.A.2}%
+\contentsline {chapter}{\textcolor {tssteelblue}{参考文献}}{71}{section.A.2}%
+\contentsline {chapter}{\textcolor {tssteelblue}{索引}}{71}{section.A.2}%
+\contentsfinish 

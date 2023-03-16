@@ -1,0 +1,106 @@
+\chapter{气相化学平衡} % (fold)
+\label{cha:气相化学平衡}
+\section{导言} % (fold)
+\label{sec:导言 9}
+本章我们主要来处理理想气体的气相反应问题。基本思路是通过单粒子的配分函数$q$，获得反应的平衡常数$K$，从平衡常数可以进一步得到有关反应的热力学参数$\Delta_r G_m$、$\Delta_r H_m$、$\Delta_r S_m$等。
+% section 导言 (end)
+\section{具体分析} % (fold)
+\label{sec:具体分析}
+考察一个一般的气相化学反应：
+\begin{equation*}
+    \ce{a A + b B <=> c C + d D}
+\end{equation*}
+或者可以写成通式\begin{equation*}
+    \sum_B v_B B =0
+\end{equation*}
+
+当体系达到化学平衡的时候，有\begin{equation}
+    \sum_Bv_B \mu_B=0 \label{equ:equilibrium condition}
+\end{equation}
+
+对整体的配分函数进行因子化处理\begin{equation*}
+    Q=\prod_B \frac{q_B^{N_B}}{N_B!}
+\end{equation*}
+
+根据我们前面得到的结论：\begin{align}
+    A&=-kT \ln Q\\
+    \mu_B &=\diffp*{A}{{N_B}}{T,V,\{n_C,C\neq B\}}
+\end{align}
+由此可以得到\begin{gather}
+    A=-kT \sum_B \ln \frac{q_B^{N_B}}{N_B!}=-kT \sum_C \left[N_C\ln\frac{q_C}{N_C}+N_C\right]\\
+    \mu_B =\diffp*{A}{{N_B}}{T,V,\{n_C,C\neq B\}}=-kT \ln \frac{q_B}{N_B}
+\end{gather}
+代入化学平衡条件\eqref{equ:equilibrium condition}，可以得到\begin{equation}
+    \sum_B v_B \ln \frac{q_B}{N_B}=0\Rightarrow \sum_B \ln q_B^{v_B} =\sum_B \ln N_B^{v_B}
+\end{equation}
+
+稍加变形，就有\begin{equation}
+    \prod_B \frac{q_B^{v_B}}{V^{v_B}}=\prod_B \frac{N_B^{v_B}}{V^{v_B}}
+\end{equation}
+记数密度\begin{equation}
+    \rho_B = \frac{N_B}{V}=\frac{p_B}{kT}
+\end{equation}
+
+于是\begin{equation}
+    \begin{aligned}
+        RHS.&=\prod_B \rho_B^{v_B} =\left(\prod_B \left(\frac{p_B}{p^{\ominus}}\right)^{v_B}\right) \cdot \left(\frac{p^\ominus}{kT}\right)^{\Delta v_B}\\
+        &=K_p^\ominus \cdot \left(\frac{p^\ominus}{kT}\right)^{\Delta v_B}
+    \end{aligned}
+\end{equation}
+而\begin{equation}
+    LHS.=\prod_B \left(\frac{q_B(\text{in})}{\lambda_B^3}\right)^{v_B}
+\end{equation}
+其中$\lambda$为热运动波长，因为\begin{equation}
+    q_t =\frac{V}{\lambda^3}
+\end{equation}这里相当于约去了平动部分。
+
+因为$q_B(in)=q_B^{(n)}q_{evr,B}$，因为化学反应前后原子核不会发生变化，所以\begin{equation}
+    \prod_B (q_B^{(n)})^{v_B} =1 
+\end{equation}
+因此就有\begin{equation}
+    \prod_B \left(\frac{q_{evr,B}}{\lambda_B^3}\right)^{v_B}=K_p^{\ominus} \cdot \left(\frac{p^{\ominus}}{kT}\right)^{\Delta v_B}
+\end{equation}
+% section 具体分析 (end)
+\section{Examples} % (fold)
+\label{sec:Examples}
+\subsection{\ce{Na}的双聚} % (fold)
+\label{sub:Na的双聚}
+我们先来看反应\ce{Na2 (g) <=> 2Na (g)}，显然应该有\begin{equation}
+\begin{aligned}
+    K_p &= \frac{\left(q_{evr,\ce{Na}}/\lambda^3_{\ce{Na}}\right)^2}{q_{evr,\ce{Na2}}/\lambda_{\ce{Na2}}^3}\\
+    &=\frac{\lambda_{\ce{Na2}}^3}{\lambda_{\ce{Na}}^6} \frac{[g_{e,\ce{Na}}^{(0)}]^2 \cdot e^{-\beta \cdot 2 \varepsilon_{e,\ce{Na}}^{(0)}}}{\frac{T}{2\theta_r} \frac{e^{-\beta\hbar\omega/2}}{e^{-\theta_v/T}} \cdot g_{e,\ce{Na2}}^{(0)} e^{-\beta \varepsilon_{e,\ce{Na2}}^{(0)}} }
+\end{aligned}
+\end{equation}  
+
+对于\ce{Na}原子，其电子组态未\ce{[Ne]3s^1}，因此$S=\frac{1}{2}$，因而$g_{e,\ce{Na}}^{(0)}=2$，而对于\ce{Na2}，基态时$S=0$，因而$g_{e,\ce{Na2}}^{(0)}=1$。再考虑到热波长满足\begin{equation}
+    \lambda_B =\sqrt{\frac{2\pi m_B kT}{h^2}}
+\end{equation}
+原式可以化简为\begin{equation}
+    K_p=8 \left(\frac{\pi m_{\ce{Na}}kT}{h^2}\right)^{3/2} \frac{\theta_{r,\ce{Na2}}}{T} \left(1-e^{\frac{\theta_{v,\ce{Na2}}}{T}}\right)e^{-\beta D_0}
+\end{equation}
+其中\begin{equation}
+    D_0 = 2\varepsilon_{e,\ce{Na}}^{(0)} -\varepsilon_{e,\ce{Na}}^{(0)}-\frac{1}{2}\hbar\omega
+\end{equation}
+% subsection \ce{Na}的双聚 (end)
+\subsection{\ce{H2}和\ce{I2}反应} % (fold)
+\label{sub:H2和I2反应}
+我们再来看反应\ce{H2 + I2 <=> 2HI}，类似上面的结果，我们有\begin{equation}
+    \begin{aligned}
+        K_p& = \frac{q_{evr,\ce{HI}}}{q_{evr,\ce{H2}}q_{evr,\ce{I2}}} \cdot \frac{\lambda_{\ce{H2}}^3\lambda_{\ce{I2}}^3}{\lambda_{\ce{HI}}^6}\\
+        &= \frac{m_{\ce{HI}}}{m_{\ce{H2}^{3/2}}\cdot m_{\ce{I2}^{3/2}}}\cdot \frac{4\theta_{r,\ce{H2} }\theta_{r,\ce{I2}}}{\theta_{r,\ce{H2}}^2} \cdot \frac{\left(1-e^{-\theta_v(\ce{H2})/T}\right)\left(1-e^{-\theta_v(\ce{I2})/T}\right)}{\left(1-e^{-\theta_v(\ce{HI})/T}\right)^2} \cdot \frac{e^{\beta (2D_{e}^{\ce{HI}}-D_{e}^{\ce{H2}}-D_{e}^{\ce{I2}})}}{e^{\beta (2\cdot \frac{1}{2} \hbar \omega_{\ce{HI}}-\frac{1}{2}\hbar\omega_{\ce{H2}}-\frac{1}{2}\hbar\omega_{\ce{I2}})} }\\
+        &=Ae^{\beta (2D_{e}^{\ce{HI}}-D_{e}^{\ce{H2}}-D_{e}^{\ce{I2}})}
+    \end{aligned}
+\end{equation}
+% subsection \ce{H2}和\ce{I2}反应 (end)
+% section Examples (end)
+
+\begin{review}
+    \item 化学平衡常数和分子配分函数的关系；
+    \item \ce{Na}的双聚和\ce{H2}和\ce{I2}反应；
+    \item 零点能校正
+\end{review}
+\section{习题} % (fold)
+\label{sec:习题gas reaction}
+
+% section 习题 (end)
+% chapter 气相化学平衡 (end)

@@ -1,0 +1,111 @@
+\chapter{Bose-Einstein凝聚} % (fold)
+\label{cha:Bose-Einstein凝聚}
+\section{Introduction} % (fold)
+\label{sec:Introduction 9}
+对于无结构无内禀简并度的玻色子和费米子，我们有\begin{equation}
+    \begin{aligned}
+        \beta p V &=\ln \Xi_{\substack{FB\\BE}}= \int_{0}^{+\infty}\pm \left(1\pm e^{\beta(\mu-\varepsilon)}\right)  g(\varepsilon) \mathrm{d}\varepsilon\\
+        &=2\pi V \left(\frac{m}{2\hbar^2 \pi^2}\right)^{3/2}\int_{0}^{+\infty} \pm \ln(1\pm e^{\beta(\mu-\varepsilon)}) \varepsilon \mathrm{d}\varepsilon
+    \end{aligned}
+\end{equation}
+令$z=e^{\beta\mu},y=\beta \varepsilon$，于是\begin{equation}
+    \beta p\Lambda_B^3 =\frac{4}{\sqrt{4}} \int_{0}^{+\infty} \pm \ln(1\pm ze^{-y})y^{1/2} \mathrm{d}y
+\end{equation}
+再令$y=x^2$，因此\begin{equation}
+    \begin{aligned}
+        \beta p\Lambda_B^3 &=\pm \frac{4}{\sqrt\pi} \int_{0}^{+\infty} \ln(1\pm ze^{-x^2})x^2 \mathrm{d}x\\
+        &=\pm \frac{4}{\sqrt\pi} \int_{0}^{+\infty} \sum_{n=1}^{\infty}  (-1)^{n+1} \frac{(\pm1)^n z^n e^{-n x^2}}{n}x^2\mathrm{d}x\\
+        & =(\mp)^{n+1} \sum_{n=1}^{+\infty} \frac{z^n}{n}  \int_{0}^{+\infty} e^{-n x^2}x^2\mathrm{d}x\\
+        & = \sum_{n=1}^{+\infty}  \frac{(\mp)^{n+1} }{n^{5/2}} z^n 
+    \end{aligned}
+\end{equation}
+即有\begin{equation}
+    \beta p V = \frac{V}{\Lambda_B^3} \sum_{n=1}^{+\infty}  \frac{(\mp)^{n+1} }{n^{5/2}} z^n 
+\end{equation}
+对于费米子和玻色子就有\begin{equation}
+    \ln \Xi_{\substack{FB\\BE}}=\frac{V}{\Lambda_B^3} \sum_{n=1}^{+\infty}  \frac{(\mp)^{n+1} }{n^{5/2}} z^n
+\end{equation}
+因此\begin{equation}
+    \begin{aligned}
+        \braket{E}&=-\diffp*{{\ln \Xi_{\substack{FB\\BE}}}}{\beta}{\, V,\zeta} =3 \ln \Xi_{\substack{FB\\BE}} \cdot \frac{1}{\Lambda_B} \diffp{\Lambda_B}{\beta}\\
+        &=\frac{3}{2}k_B T\ln \Xi_{\substack{FB\\BE}} 
+    \end{aligned}
+\end{equation}
+同时\begin{equation}
+    \begin{aligned}
+        \braket{N}_{\substack{FB\\BE}}&=-\diffp*{{\ln \Xi_{\substack{FB\\BE}}}}{{(-\beta\mu)}}{\, \beta, V} =\diffp{{\ln \Xi_{\substack{FB\\BE}}}}{z} \diffp{z}{{(\beta\mu)}} \\
+        &= z \cdot \frac{V}{\Lambda_B^3} \sum_{n=1}^{\infty}\frac{(\mp 1)^{n+1}}{n^{3/2}} z^{n-1}\\
+        &=\frac{V}{\Lambda_B^3} \sum_{n=1}^{\infty}\frac{(\mp 1)^{n+1}}{n^{3/2}} z^{n}\\
+    \end{aligned}
+\end{equation}
+
+% section Introduction (end)
+\section{Bose-Einstein凝聚} % (fold)
+\label{sec:Bose-Einstein凝聚}
+\begin{definition}
+    当发生玻色-爱因斯坦凝聚\index{玻色-爱因斯坦凝聚}的时候，有宏观量级的玻色子处于$\varepsilon=0$的基态，i.e.\begin{equation}
+        n\left(\epsilon_{s}\right) \equiv \lim _{V \rightarrow \infty} \frac{f\left(\epsilon_{s}\right)}{V}=\lim _{V \rightarrow \infty} \frac{1}{V} \frac{1}{\exp \left[\left(\epsilon_{s}-\mu\right) / \tau\right]-1} \neq 0.
+    \end{equation}
+\end{definition}
+回顾我们之前的\begin{equation}
+    \begin{aligned}
+        \beta p V &=\ln \Xi_{\substack{FB\\BE}}= \int_{0}^{+\infty}\pm \left(1\pm e^{\beta(\mu-\varepsilon)}\right)  g(\varepsilon) \mathrm{d}\varepsilon\\
+        &=2\pi V \left(\frac{m}{2\hbar^2 \pi^2}\right)^{3/2}\int_{0}^{+\infty} \pm \ln(1\pm e^{\beta(\mu-\varepsilon)}) \mathrm{d}\varepsilon
+    \end{aligned}
+\end{equation}
+这里我们无意中忽略了$\varepsilon=0$的项，这在大多数情况下是没有问题的，因为$\displaystyle \int_{a}^{b}f(x) \mathrm{d} x =\int_{a}^{b}f(x)+g(x) \mathrm{d} x$，其中$g(x)$只在有限个点取有限的值。但是这里的$\varepsilon=0$的位置有宏观量级的粒子，反应在积分中就相当于在$\varepsilon=0$处出现了$\delta$函数。因此我们可以在原式中加上端点的值$-\ln(1-z)$，这将不会对原来的积分产生影响，因此\begin{equation}
+    \beta p V=\ln \Xi=\frac{V}{\Lambda_B^3} \sum_{n=1}^{\infty}\frac{1}{n^{5/2}} z^{n}-\ln(1-z)
+\end{equation}
+于是我们就有\begin{equation}
+    \braket{N}_{BE} = \frac{V}{\Lambda_B^3} \sum_{n=1}^{\infty}\frac{1}{n^{3/2}} z^{n}+\frac{z}{1-z} 
+\end{equation}
+
+于是当粒子数固定的时候，减小$T$或者$V$都会使基态占据数\begin{equation}
+    n_0 = \frac{1}{e^{-\beta \mu}-1} = \frac{z}{1-z}
+\end{equation}
+
+\begin{definition}
+    定义凝聚温度\index{凝聚温度}$T_c$满足\begin{equation}
+        N(T_c) =\frac{V}{\Lambda_B^3} \sum_{n=1}^{\infty} \frac{1}{n^{3/2}} = V n_Q \zeta(\frac{3}{2}) = \frac{V}{h^3} (2\pi m k_B T_c)^{3/2} \zeta(3/2)
+    \end{equation}
+    其中$n_Q=\frac{1}{\Lambda_B^3}$被称为quantum density，上式也即\begin{equation}
+        \frac{n(T_c)}{n_Q} =\zeta(\frac{3}{2})
+    \end{equation}
+    相应的$T_c$为\begin{equation}
+        T_c = \left(\frac{N(T_c)}{v\zeta(3/2)}\right)^{2/3} \frac{h^2}{2\pi m k_B}
+    \end{equation}
+\end{definition}
+
+当温度在凝聚温度以上的时候$n_0\ll N$，而当温度降到凝聚温度以下的时候，\begin{equation}
+    N=\frac{V}{\Lambda_B^3} \zeta(3/2) +n_0=N \left(\frac{T}{T_c}\right)^{3/2} +n_0
+\end{equation}
+在凝聚温度以下，$n_0$逐渐增加到宏观量级。i.e.\begin{equation}
+    \frac{n_0}{N} =1- \left(\frac{T}{T_c}\right)^{3/2}
+\end{equation}
+
+这个时候\begin{equation}
+    \ln \Xi = \frac{V}{\Lambda_B^3}  \sum_{n=1}^{\infty} \frac{1}{n^{5/2}} -\ln(1-z) = \frac{V}{\Lambda_B^3}\zeta(5/2) -\ln(1-z)
+\end{equation}
+
+于是\begin{equation}
+    \braket{E} =-\diffp{\ln \Xi}{\beta} = \frac{3V}{\Lambda_B^4}\zeta(5/2) \frac{h}{2\sqrt{2\pi mk_B T}} -\frac{\mu z}{z-1}
+\end{equation}
+
+% section Bose-Einstein凝聚 (end)
+\section{Example:\ce{{}^4He}} % (fold)
+\label{sec:Example:He 3}
+
+% section Example:He 3 (end)
+\begin{review}
+    \item 无结构无内禀简并度的玻色子/费米子巨配分函数；
+    \item Bose-Einstein凝聚的概念；
+    \item Bose-Einstein凝聚的条件和凝聚温度；
+    \item 凝聚态的热力学性质
+    \item \ce{{}^4 He}的Bose-Einstein凝聚；
+\end{review}
+
+\section{习题} % (fold)
+\label{sec:习题9}
+
+% section 习题 (end)
+% chapter Bose-Einstein凝聚 (end)

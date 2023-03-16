@@ -1,0 +1,32 @@
+\usepackage{xeCJK}
+\usepackage{ctex}
+\usepackage{fontspec}
+\usepackage{hyperref,amsmath,mhchem,cancel,braket}
+\usepackage{physics2}
+\hypersetup{hidelinks}
+\usepackage{esdiff} 
+\usepackage{subfigure}
+\setCJKmainfont{NSimSun}
+\setmainfont{Segoe UI}
+\bibliographystyle{plain}
+\usepackage{natbib}
+\usepackage{unicode-math}
+\newcommand{\bd}[1]{\symbfit{#1}}
+\newcommand{\di}{\mathrm{d}}
+\newcommand{\arr}{
+	\begin{tikzpicture}
+		\draw[white,fill=black] (0,0)--(.4em,0)--(-.18em,-.32em)--(0,0); %下方三角填充
+		\draw (0,0)--(-.18em,-.32em)--(.4em,0)--(-.18em,.32em)--(0,0); %边缘轮廓
+		\draw (0,0)--(.4em,0); %中间那条横线
+	\end{tikzpicture}}
+\tcbuselibrary{breakable}
+\definecolor{ztxgreen}{RGB}{0, 120, 80}
+\newtcolorbox{pointlist}[2][]{colframe=blue!65!green,colback=white,fonttitle=\bfseries\large\kaishu,fontupper=\kaishu,breakable,title=#2,#1}
+\newtcolorbox{examplelist}{colframe=green!40!yellow!50!blue,colback=white!95!black,fontupper=\fangsong,breakable}
+\newtcolorbox{solution}{before upper={\textit{\bfseries 解}：},colframe=white,colback=white!95!black!95!green,fontupper=\kaishu,breakable}
+\newtcolorbox[auto counter, number within=chapter,list type=subsubsection, list inside=toc]{refquestion}{before lower={{\bfseries Answer}：},colframe=green!60!red!60!blue,colback=white!95!black!,fontupper=\kaishu,fontlower=\kaishu,breakable,title={\bfseries{\large{\fangsong 思考题 \thetcbcounter}}}}
+\newtcolorbox[auto counter, number within=chapter,list type=subsubsection, list inside=toc]{Dedis}{colframe=ztxgreen,colback=white,fontupper=\kaishu,fontlower=\kaishu,breakable,title={\bfseries{\large{ Detailed Discussion \thetcbcounter}}}}
+\newcommand \dbar {\text{đ}}
+
+
+\numberwithin{equation}{section}

@@ -1,0 +1,142 @@
+% ----
+\chapter{量子统计学的表述形式} 
+\label{cha:量子统计学的表述形式}
+\section{Introduction} % (fold)
+\label{sec:quantIntroduction}
+前面我们所讨论的系综理论是具有一般性的，当我们将其应用于经典系统的时候，不会有任何问题。但是当我们将它应用于由不可分辨的实体组成的量子系统的时候，就必须非常小心。
+
+在这种情况下， 比较合适的方法是使用更加适合于量子力学的算符和波函数语言来改写系综理论。
+
+
+
+% section Introduction (end)
+
+\section{密度矩阵} % (fold)
+\label{sec:密度矩阵}
+如果系综中总共有$\mathcal{N}$个系统，第$k$个系统的波函数为$\psi^k(\bd{r},t)$，存在一个正交函数的完全集合$\varphi_n(\bd{r})$，使得我们可以将$\psi(\bd{r},t)$写成\begin{equation}
+    \psi^k(\bd{r},t)=\sum_i a^k_n(t)\, \varphi_n(\bd{r})
+\end{equation}
+考虑一个物理量的系综平均，就有\begin{equation}
+    \braket{A}_t=\frac{1}{\mathcal{N}}\sum_{k=1}^{N} \braket{\psi^k(t)|A|\psi^k(t)}=\frac{1}{\mathcal{N}}\sum_{k=1}^{N} \braket{\psi^k(t)|A|\psi^k(t)}.
+\end{equation}
+
+波函数随着时间的演化满足薛定谔方程\begin{equation}
+    \hat{H}\psi^k(\bd{r},t)=i\hbar \dot{\psi}^k(\bd{r},t)
+\end{equation}
+
+
+于是我们定义密度算符\index{密度算符} $\hat{\rho}$
+\begin{equation}
+    \hat{\rho}(t)=\sum_{k}p_k \ket{\psi^k(t)}\bra{\psi^k(t)}
+\end{equation}
+其矩阵元为\begin{equation}
+    \rho_{mn}(t)=\frac{1}{\mathcal{N}} \sum_{k=1}^{\mathcal{N}} a_{m}^k(t)a_n^k (t).
+\end{equation}
+
+一般来说，密度算符具有以下的性质
+\begin{pointlist}{密度矩阵的性质}
+    \begin{itemize}
+        \item 密度矩阵的对角元由下式给出\begin{equation}
+            \rho_{\alpha\alpha} =\sum_k p_k\ket{\alpha} \bra{\varphi^{k}(t)}\ket{\varphi^k(t)}\bra{\alpha} =\sum_k p_k \braket{\alpha|\varphi^k(t)}^2\le 1
+        \end{equation}
+        \item 密度矩阵的迹和时间无关，而且始终是归一化的\begin{equation}
+            \operatorname{Tr} (\rho) = \sum_{\alpha} \rho_{\alpha\alpha}=1
+        \end{equation}
+        \item 密度矩阵的平方的迹总是小于1\begin{equation}
+            \operatorname{Tr} (\rho^2) \le 1
+        \end{equation}
+        等号在系综由纯态组成的时候成立。
+    \end{itemize}
+\end{pointlist}
+
+\begin{definition}
+    从密度矩阵出发，可以定义von Neumann 熵\index{von Neumann 熵} \begin{equation}
+        S=-\operatorname{Tr} \hat{\rho} \ln \hat{\rho} =-\sum_{\alpha} \lambda_\alpha \ln \lambda_{\alpha}
+    \end{equation}
+    其中$\lambda_\alpha$是密度矩阵的特征值。
+\end{definition}
+
+
+在系综理论中一个物理量的期望值应该由双重平均过程给出\begin{equation}
+    \braket{G}=\frac{1}{\mathcal{N}}\sum_{k=1}^{\mathcal{N}} \braket{\psi^k(t)|G|\psi^k(t)}
+\end{equation}
+从而我们就有\begin{equation}
+    \braket{G}=\frac{1}{\mathcal{N}} \sum_{k=1}^{\mathcal{N}} \left[\sum_{m,n} a_n^{k*}a_m^k G_{nm}\right]
+\end{equation}
+其中\begin{equation}
+    G_{nm}=\int \varphi_n^* \hat{G} \varphi_m \di \tau
+\end{equation}
+于是任意一个物理量的平均值就可以写成\begin{equation}
+    \braket{G}=\sum_{m,n} \rho_{mn}G_{nm}=\mathrm{Tr} (\hat{\rho}\hat{G}) 
+\end{equation} 
+
+考虑密度矩阵对时间的微分\begin{equation}
+    \diffp{\rho}{t}= \sum_{k}p_k \left(\ket{{\diffp{{\psi^k}}{t}}}\bra{{\psi^k}}+\ket{{\psi^k}}\bra{\diffp{{\psi^k}}{t}}\right)
+\end{equation}
+利用薛定谔方程，我们就有\begin{equation}
+    ih\diffp{\rho}{t}= \sum_{k}p_k \left(\hat{H}\ket{{\psi^k}}\bra{{\psi^k}}-\ket{{\psi^k}}\bra{{\psi^k}}\hat{H}\right)
+\end{equation}
+所以密度矩阵$\rho$满足\begin{equation}
+    \dot{\rho} =-\frac{i}{\hbar} \left[\hat{H},\hat{\rho}\right]
+\end{equation}
+这就是经典的刘维尔方程的量子比拟。 
+% section 密度矩阵 (end)
+\section{各种统计系综} % (fold)
+\label{sec:各种统计系综}
+\subsection{微正则系综} % (fold)
+\label{sub:quantum 微正则系综}
+微正则系综的状态参量是$N,V,E$，即粒子数为$N$，体积为$V$，能量在$\displaystyle \left(E-\frac12\Delta, E+\frac12\Delta\right)$，其中$\Delta \ll E$。系统有$\Omega(N,V,E,\Delta)$每一个可及的态的概率相同。于是自然有密度矩阵\begin{equation}
+    \rho = \frac{1}{\Omega(N,V,E,\Delta)} \sum_{k=1}^{\Omega(N,V,E,\Delta)} \ket{\psi^k(t)}\bra{\psi^k(t)}
+\end{equation}
+
+特别地$\Omega=1$的时候，我们称之为纯态
+% subsection 微正则系综 (end)
+\subsection{正则系综} % (fold)
+\label{sub:quantum 正则系综}
+在正则系综中，体系处于某一个状态的概率和$\exp(-\beta E_r)$成正比，于是可以归一化得到\begin{equation}
+    \rho_n = \frac{\exp(-\beta E_n)}{\mathcal{Z}},\quad \mathcal{Z}=\sum_{n=1}^{\infty} \exp(-\beta E_n)
+\end{equation}
+进而正则系综的密度函数可以被写成\begin{equation}
+    \begin{aligned}
+        \rho(E) &= \sum_{n} \frac{\exp(-\beta E_n)}{\mathcal{Z}}   \ket{\varphi_n}\bra{\varphi_n}\\
+        &= \sum_{n}\frac{\exp(-\beta E_n)}{\mathcal{Z}}   \ket{\varphi_n}\bra{\varphi_n}\\
+        & =\frac{\exp(-\beta \hat{H})}{\operatorname{Tr}( \exp(-\beta \hat{H}))}
+    \end{aligned}
+\end{equation}
+其中$\displaystyle \sum_n \bra{\varphi_n}\ket{\varphi_n}$为单位算符，而算符$\exp(-\beta \hat{H})$表示的是级数展开的结果\begin{equation}
+    \exp(-\beta \hat{H})=\sum_{n=0}^{\infty} \frac{(-\beta \hat{H})^n}{n!}
+\end{equation}
+
+物理量的均值可以由下式给出\begin{equation}
+    \braket{G}_N=\operatorname{Tr} (\hat{\rho}\hat{G}) =\frac{\operatorname{Tr}(\hat{G} \exp(-\beta \hat{H}))}{\operatorname{Tr}(\exp(-\beta \hat{H}))}
+\end{equation}
+% subsection 正则系综 (end)
+\subsection{巨正则系综} % (fold)
+\label{sub:quantum 巨正则系综}
+巨正则系综相比正则系综释放了粒子数的限制，我们直接类比正则系综中的结论来得到巨正则系综的密度算符\begin{equation}
+    \hat{\rho}=\frac{\exp[-\beta( \hat{H}-\mu\hat{n})]}{\mathcal{Q}(\mu,V,T)}=\frac{\exp(-\beta( \hat{H}-\mu\hat{n}))}{\operatorname{Tr}\{\exp[-\beta (\hat{H}-\mu \hat{n})]\}}
+\end{equation}
+% subsection 巨正则系综 (end)
+
+% section 各种统计系综 (end)
+\section{Examples} % (fold)
+\label{sec:Examples}
+我们来具体的看几个使用量子统计方法处理的例子。
+
+\subsubsection{1.磁场中的一个电子}
+\subsubsection{2.三维势箱中的一个自由粒子}
+% section Examples (end)
+\begin{review}
+    \item 密度矩阵和密度矩阵的演化方程；
+    \item von Neumann 熵；
+    \item 系综的量子力学描述；
+    \item 量子统计的实例；
+\end{review}
+\section{习题} % (fold)
+\label{sec:习题3}
+\begin{enumerate}
+    \item 
+\end{enumerate}
+% section 习题 (end)
+% chapter 量子统计学的表述形式 (end)
+%---------------------------------------------------------------------------

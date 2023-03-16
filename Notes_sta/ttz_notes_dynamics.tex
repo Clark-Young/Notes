@@ -1,0 +1,310 @@
+\documentclass[AutoFakeBold]{tstextbook}
+\input{settings.tex}
+\begin{document}
+
+\tsbook{\songti 统计力学笔记}
+{\large \kaishu 陶洋 \ 杨春雨\\
+    千淘万漉虽辛苦，淘尽黄沙始到金。}
+{Ts\TeX tbook}
+{2023}
+{20603}{206--03--2023--01--1}{1.0}
+{USTC}
+{Hefei}
+
+
+
+
+
+\chapter{磁学系统的相变 I} % (fold)
+\label{cha:磁学系统的相变 I}
+\section{Introduction} % (fold)
+\label{sec:Introduction}
+\subsection{问题背景} % (fold)
+\label{sub:问题背景}
+前面我们所了解的统计力学，大多数处于下面的范式之中
+
+\begin{enumerate}\setlength{\itemsep}{0pt}
+    \item 首先计算体系的能谱，对于给定的某一个态$v$，求解$E_v$，$v$在经典力学中指的是相空间中的点，在量子力学中指的是离散的微观态。
+    \item 然后计算配分函数，比如对于正则系综，有\begin{equation}
+              Q=\sum_{v}e^{-\beta E_v}
+          \end{equation}
+    \item 最后利用热力学的有关理论关联到具体的宏观热力学性质。比如常见的热力学函数\begin{equation}
+        F=-kT\ln Q\\
+        \di F = -S\di T -p\di V +\mu \di N
+    \end{equation}
+\end{enumerate}
+
+实际应用中，这一套理论存在两大问题：$E_v$求解困难；$Q$计算困难。此外，我们前面一段时间所讨论的系统都是无相互作用的，这个情况显然也是过于理想化的。从本章开始我们将致力于研究有相互作用的复杂体系。
+
+相变\index{相变}，就是显著的相互作用带来的结果。
+% subsection 问题背景 (end)
+
+\subsection{PVT系统和HMT系统} % (fold)
+\label{sub:PVT系统和HMT系统}
+本章中我们主要讨论磁学系统的相变，这个体系相对陌生，因此我们首先将其和我们较为熟悉的热力学系统的相变类比，我们可以发现两者有许多相似之处。
+
+首先看最经典的$p-T$相图，在给定压强下，
+% subsection PVT系统和HMT系统 (end)
+\subsection{Ising模型和磁学热力学} % (fold)
+\label{sub:Ising模型和磁学热力学}
+我们使用Ising模型来描述磁学系统。如图\ref{fig:Ising model}首先建立一个二维晶格，每个格子上有一个自旋，自旋$s_i$的取值只有$\pm 1$，于是体系的微观态等价于$\{s_i\}$。
+
+\begin{figure}[h]
+       \centering
+       \includegraphics[width=0.64\textwidth]{fig/ising model.png}
+       \caption{Ising模型}
+       \label{fig:Ising model}
+\end{figure}
+
+我们依旧按照之前的范式来求解这个问题。首先我们尝试获得体系的能谱，但是我们并不求解薛定谔方程，而是直接给出模型化的能量：\begin{equation}
+    E_v = -\sum_{i=1}^{N} H \mu s_i -J \sum_{ij}' s_i s_j 
+\end{equation}
+其中$\displaystyle -\sum_{i=1}^{N} H \mu s_i$表示的是粒子在外场中的能量，而$\displaystyle -J \sum_{ij}' s_i s_j$表示的是邻近自旋的相互作用。体系对应的磁矩为\begin{equation}
+    M_v = \left(\sum_{i=1}^{N}s_i\right)\mu
+\end{equation}
+
+然后写出体系的配分函数为\begin{equation}
+    Q(N,B,H) = \sum_v e^{-\beta E_v}
+\end{equation}
+当然这里的配分函数其实不是正则配分函数，具体的细节我们需要慢慢展开。
+
+类比前面的热力学结论，我们可以建立磁学系统的热力学关系（我们考虑的均为$N$不变的情形）如表\ref{tab:磁学系统和热力学系统的对比}。\begin{table}[h]
+       \centering
+       \caption{磁学系统和热力学系统的对比}
+       \vspace{-5mm}
+       \setlength{\arraycolsep}{9mm}
+       \label{tab:磁学系统和热力学系统的对比}
+       \begin{equation*}
+        \begin{array}{l|l}
+            \hline
+            \text{PVT系统} &\text{HMT系统}\\
+            \hline
+            \begin{aligned}
+                \di U &=\dbar Q-\dbar W\\
+                &=\dbar Q- p\di V\\
+                &= T\di S- p\di V
+            \end{aligned} & \begin{aligned}
+                \di U &=\dbar Q-\dbar W\\
+                & =\dbar Q + H\di M\\
+                &= T\di S +H\di M
+            \end{aligned}\\
+            F(T,V) = U(S,N) -TS & F(T,M) =U(S,M) -TS\\
+            \di F =-S\di T -p\di V & \di F =-S\di T +H\di M\\
+            G(T,p)=F(T,V) +pV & G(T,H) =F(T,M) -HM\\
+            \di G =-S\di T +V\di p & \di G =-S\di T -M\di H\\
+            \hline
+        \end{array}
+       \end{equation*}
+\end{table}
+
+从表\ref{tab:磁学系统和热力学系统的对比}中，我们还可以发现\begin{equation}
+    M =-\diffp*{G(T,H)}{H}{\, T}
+\end{equation}
+
+再回过头来看前面的配分函数，有\begin{equation}
+    Q(N,\beta, H) =\sum_{\{s_i\}} \exp( \beta \mu H \sum_i s_i +\beta J \sum_{ij}' s_is_j)
+\end{equation}
+现在我们从这个配分函数出发，开始构建统计热力学关系。显然有\begin{equation}
+    \diffp*{Q}{{(\beta H)}}{\, \beta} =\sum_{\{s_i\}} \left(\mu \sum_{i=1}^{N} s_i\right) \exp( \beta \mu H \sum_i s_i +\beta J \sum_{ij}' s_is_j)
+\end{equation}
+于是\begin{equation}
+    \diffp*{\ln Q}{{(\beta H)}}{\, \beta}= \frac{1}{Q} \diffp*{Q}{{(\beta H)}}{\, \beta} = \Braket{\mu \sum_{i=1}^{N} s_i }=M =-\diffp*{G(T,H)}{H}{\, T}
+\end{equation}
+因此\begin{equation}
+    G(T,H) = -k_B T \ln Q(N,\beta ,H)
+\end{equation}
+除了$G$之外，还有一些常用的热力学量
+\begin{definition}[响应函数$\chi_T$]
+    \begin{equation}
+        \begin{aligned}
+            \chi_T &= \frac{1}{N} \diffp*{M}{{(\beta H)}}{\, beta}=\frac{1}{N} \diffp*{\ln Q}{{(\beta H)^2}}{\, \beta}\\
+            &=\frac{1}{N} \left( \frac1Q \diffp*{Q}{{(\beta H)^2}}{\,\beta} -\frac{1}{Q^2} \diffp*{Q}{{(\beta H)}}{\,\beta}\right)^2\\
+            &=\frac1N \left[\braket{M^2}-\braket{M}^2\right]\\
+            &=\frac1N \braket{\Delta M^2}
+        \end{aligned}
+    \end{equation}
+\end{definition}
+\begin{definition}[等场热容$C_H$]
+    \begin{equation}
+        \begin{aligned}
+            C_H &= \diffp*{E}{T}{\, H} =- \left(\diffp{}{T} \diffp{\ln Q}{\beta}\right)_{\, H}= \left(\diffp{}{T} \diffp{{(\beta G)}}{\beta}\right)_{ H} \\
+            &=\left(\diffp{}{T} \left[ G +\beta \diffp{G}{\beta}\right]\right)_{\, H}= \diffp*{G}{T}{\, H} -\frac{1}{kT^2}\diffp*{G}{\beta}{\, H} +\beta \left(\diffp{}{T} \diffp{G}{\beta}\right)_{H}\\
+            & = 2 \diffp*{G}{T}{\,H} -\beta \diffp{}{T} \left(kT^2 \diffp{G}{T}\right)_{H}= -T \diffp*{G}{{T^2}}{\,H}\\
+            &= T\diffp*{S}{T}{\, H}
+        \end{aligned}
+    \end{equation}
+\end{definition}
+% subsection Ising模型和磁学热力学  (end)
+
+% section Introduction (end)
+\section{相变现象} % (fold)
+\label{sec:相变现象}
+到目前为止，我们已经基本掌握了分析相变问题的理论基础，包括Ising模型和磁学热力学。现在我们尝试对真实的相变进行具体的分析。
+
+\begin{remark}
+    我们这里讨论的都是外磁场$H=0$的情形。
+\end{remark}
+
+Ising模型中的能量为\begin{equation}
+    E_v=-\sum_{i=1}^{N}H\mu s_i -\sum_{i,j}' J_{ij}s_is_j
+\end{equation}
+当$J>0$的时候，能量上非常有利于邻近方向的自旋取向一致，不过同时也会带来熵的下降。
+
+对于一维的Ising模型，其不可能发生相变，因为无序态永远比有序态要来的稳定。
+
+当我们仔细思考Ising模型的时候，会发现存在如下的矛盾：当$H=0$的时候，体系中$\uparrow$和$\downarrow$是完全对称的两者的概率应该完全相同。
+% section 相变现象(end)
+\section{Ising模型的解析解} % (fold)
+\label{sec:Ising模型的解析解}
+我们这里的求解只针对于一维周期链$H=0$的情形。
+\subsection{Bond近似法} % (fold)
+\label{sub:Bond近似法}
+$H=0$的时候，体系的能量为\begin{equation}
+    E_v =-J \sum_{i=1}^{N} s_i s_{i+1}
+\end{equation}
+其中$s_{N+1}=s_1$。定义Bond为\begin{equation}
+    b_i =s_i s_{i+1} =\pm 1
+\end{equation}
+唯一的约束条件为\begin{equation}
+    \prod_i b_i =1
+\end{equation}
+忽略上述约束，就有\begin{equation}
+    \begin{aligned}
+        Q(N,\beta,0) &\approx \sum_{\{b_i\}} \exp({-\beta J\sum_{i=1}^{N} b_i})=\left(\sum_{b_i} \exp(\beta J b_i)\right)^N\\
+        &= \left(2\cosh(\beta J)\right)^N=\left(2\cosh k\right)^N
+    \end{aligned}
+\end{equation}
+其中$k=\beta J$
+% subsection Bond近似法 (end)
+\subsection{转移矩阵法} % (fold)
+\label{sub:转移矩阵法}
+对于配分函数$Q$，显然有\begin{equation}
+\begin{aligned}
+    Q(N,\beta,0)&=\sum_{\{s_i\}} \exp({-\beta J (s_1s_2+s_2s_3+\cdots +s_Ns_1)})\\
+    &=\sum_{\{s_i\}} T(s_1,s_2)T(s_2,s_3)\cdots T(s_Ns_1)    
+\end{aligned}
+\end{equation}
+定义转移矩阵为 \begin{equation}
+    \widetilde{I} =\begin{pmatrix}
+        T(1,1)& T(1,-1)\\
+        T(-1,1) & T(-1,-1)
+    \end{pmatrix}=\begin{pmatrix}
+        e^{k} & e^{-k}\\
+        e^{-k} & e^{k}
+    \end{pmatrix}
+\end{equation}
+并且有$\widetilde{I}_{s_is_j}=T(s_i,s_j),\ s_{i},s_j=\pm 1$，且\begin{equation}
+    \widetilde{I}_{s_is_k}^2 =\sum_j \widetilde{I}_{s_is_j}\widetilde{I}_{s_js_k}
+\end{equation}
+% subsection 转移矩阵法 (end)
+\subsection{热力学分析} % (fold)
+\label{sub:热力学分析}
+
+% subsection 热力学分析 (end)
+% section Ising模型的解析解 (end)
+\section{习题} % (fold)
+\label{sec:习题10}
+
+% section 习题 (end)
+% chapter 磁学系统的相变 I (end)
+\chapter{磁学系统的相变 II} % (fold)
+\label{cha:磁学系统的相变 II}
+\section{关联函数} % (fold)
+\label{sec:关联函数}
+
+% section 关联函数 (end)
+\section{平均场理论} % (fold)
+\label{sec:平均场理论}
+
+% section 平均场理论 (end)
+\section{重整化群方法} % (fold)
+\label{sec:重整化群方法}
+
+% section 重整化群方法 (end)
+\section{习题} % (fold)
+\label{sec:习题11}
+
+% section 习题 (end)
+% chapter 磁学系统的相变 II (end)
+\chapter{相图} % (fold)
+\label{cha:相图}
+\section{van der Waals方程和气液相变} % (fold)
+\label{sec:van der Waals方程和气液相变}
+
+% section van der Waals方程和气液相变 (end)
+\section{两组分系统} % (fold)
+\label{sec:两组分系统}
+
+% section 两组分系统 (end)
+\section{固液混合物} % (fold)
+\label{sec:固液混合物}
+
+% section 固液混合物 (end)
+\section{习题} % (fold)
+\label{sec:习题12}
+
+% section 习题 (end)
+% chapter 相图 (end)
+\chapter{相变的朗道唯象理论} % (fold)
+\label{cha:相变的朗道唯象理论}
+
+% chapter 相变的朗道唯象理论 (end)
+\chapter{经典流体} % (fold)
+\label{cha:经典流体}
+\section{Introduction} % (fold)
+\label{sec:Introduction 14}
+本章中我们的研究对象是常温常压下的液体、气体。我们主要关注他们在平衡态下的几何结构，而不关心它们的电子结构。区别于结构化学和应用量子化学中关系的B-O近似下的电子结构问题。本章我们主要关注于原子核坐标$\{\vec{R}_A\}$以及其他平衡态热力学性质。
+
+在统计力学中，已知$N$个原子和它们之间的相互作用，想要获得各种平衡态的热力学性质，最自然的想法是求体系的配分函数。
+\begin{equation}
+    Q=\sum_{v}e^{-\beta E_v}
+\end{equation}
+在B-O近似下，上式可以写成\begin{equation}
+    Q=\sum_{\{R\}} \left(\sum_{\{r\}}e^{-\beta E_{r}(R)}\right) =\sum_{\{R\}} e^{-\beta {\widetilde{E}({\{R\}})}}
+\end{equation}
+其中$\widetilde{E}(\{R\})$为所有电子态$\{r\}$加权平均下的核与核之间的有效相互作用。其完全依赖于核的坐标$\{R\}$和温度。上述通过平均化去除电子的自由度的方法被称为粗粒化\index{粗粒化}。
+
+本章要讨论的就是在使用量子力学方法消去了电子的自由度之后，在常温常压下使用经典描述来处理剩下的$\{R\}$和$\widetilde{E}(\{R\})$。
+
+在前面的讨论中，我们已经说明了使用经典近似的条件是重粒子、高温。如果我们想要不考虑量子效应，就要求\begin{equation}
+    d \gg \Lambda,\quad \Lambda= \frac{h}{\sqrt{2\pi mk_B T}}
+\end{equation}
+也即\begin{equation}
+    \frac{n}{n_Q} \ll 1
+\end{equation}
+
+我们以常温常压下的水为例，其数密度为\begin{equation}
+    n= \frac{N_A \rho}{M} =3.35\times 10^{28} m^{-3}
+\end{equation}
+而其quantum density为\begin{equation}
+    n_Q=\frac{1}{\Lambda_B^3} =3.35\times 10^{24} m^{-3}
+\end{equation}
+满足$n/n_Q \gg 1$。所以经典近似是合理的。
+% section Introduction (end)
+\section{经典配分函数} % (fold)
+\label{sec:经典配分函数}
+\subsection{相空间和经典配分函数} % (fold)
+\label{sub:相空间和经典配分函数}
+
+% subsection 相空间和经典配分函数 (end)
+\subsection{一些经典性质} % (fold)
+\label{sub:一些经典性质}
+
+% subsection 一些经典性质 (end)
+% section 经典配分函数 (end)
+\section{约化分布函数} % (fold)
+\label{sec:约化分布函数}
+
+% section 约化分布函数(end)
+\section{对关联函数和热力学性质求解} % (fold)
+\label{sec:对关联函数和热力学性质求解}
+
+% section 对关联函数和热力学性质求解 (end)
+\section{习题} % (fold)
+\label{sec:习题14}
+
+% section 习题 (end)
+% chapter 经典流体 (end)
+
+
+\end{document}

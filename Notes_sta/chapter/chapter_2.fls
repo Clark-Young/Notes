@@ -1,0 +1,6 @@
+PWD d:/Doucument/ttz nots on sta/chapter
+INPUT d:/software/Write/texlive/2022/texmf.cnf
+INPUT d:/software/Write/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT d:/software/Write/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt
+INPUT chapter_2.tex
+OUTPUT chapter_2.log

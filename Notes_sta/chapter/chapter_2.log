@@ -1,0 +1,238 @@
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.9)  13 MAR 2023 14:29
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**chapter_2.tex
+(./chapter_2.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+! Undefined control sequence.
+l.1 \chapter
+            {正则系综和广义系综} % (fold)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{正
+              则系综和广义系综} % (fold)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 和 ("548C) in font nullfont!
+Missing character: There is no 广 ("5E7F) in font nullfont!
+Missing character: There is no 义 ("4E49) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+! Undefined control sequence.
+l.3 \section
+            {正则系综} % (fold)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+! Undefined control sequence.
+l.5 \subsection
+               {正则系综和配分函数} % (fold)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 和 ("548C) in font nullfont!
+Missing character: There is no 配 ("914D) in font nullfont!
+Missing character: There is no 分 ("5206) in font nullfont!
+Missing character: There is no 函 ("51FD) in font nullfont!
+Missing character: There is no 数 ("6570) in font nullfont!
+Missing character: There is no 所 ("6240) in font nullfont!
+Missing character: There is no 谓 ("8C13) in font nullfont!
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 就 ("5C31) in font nullfont!
+Missing character: There is no 是 ("662F) in font nullfont!
+Missing character: There is no 固 ("56FA) in font nullfont!
+Missing character: There is no 定 ("5B9A) in font nullfont!
+Missing character: There is no 了 ("4E86) in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+Missing character: There is no 作 ("4F5C) in font nullfont!
+Missing character: There is no 为 ("4E3A) in font nullfont!
+Missing character: There is no 状 ("72B6) in font nullfont!
+Missing character: There is no 态 ("6001) in font nullfont!
+Missing character: There is no 参 ("53C2) in font nullfont!
+Missing character: There is no 量 ("91CF) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+Missing character: There is no 一 ("4E00) in font nullfont!
+Missing character: There is no 般 ("822C) in font nullfont!
+Missing character: There is no 来 ("6765) in font nullfont!
+Missing character: There is no 说 ("8BF4) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 我 ("6211) in font nullfont!
+Missing character: There is no 们 ("4EEC) in font nullfont!
+Missing character: There is no 可 ("53EF) in font nullfont!
+Missing character: There is no 以 ("4EE5) in font nullfont!
+Missing character: There is no 将 ("5C06) in font nullfont!
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 看 ("770B) in font nullfont!
+Missing character: There is no 作 ("4F5C) in font nullfont!
+Missing character: There is no 微 ("5FAE) in font nullfont!
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 一 ("4E00) in font nullfont!
+Missing character: There is no 个 ("4E2A) in font nullfont!
+Missing character: There is no 子 ("5B50) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 统 ("7EDF) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+Missing character: There is no 让 ("8BA9) in font nullfont!
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 与 ("4E0E) in font nullfont!
+Missing character: There is no 热 ("70ED) in font nullfont!
+Missing character: There is no 库 ("5E93) in font nullfont!
+Missing character: There is no 接 ("63A5) in font nullfont!
+Missing character: There is no 触 ("89E6) in font nullfont!
+Missing character: There is no （ ("FF08) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no ） ("FF09) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+Missing character: There is no 当 ("5F53) in font nullfont!
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 和 ("548C) in font nullfont!
+Missing character: There is no 环 ("73AF) in font nullfont!
+Missing character: There is no 境 ("5883) in font nullfont!
+Missing character: There is no 达 ("8FBE) in font nullfont!
+Missing character: There is no 到 ("5230) in font nullfont!
+Missing character: There is no 热 ("70ED) in font nullfont!
+Missing character: There is no 平 ("5E73) in font nullfont!
+Missing character: There is no 衡 ("8861) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 时 ("65F6) in font nullfont!
+Missing character: There is no 候 ("5019) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 两 ("4E24) in font nullfont!
+Missing character: There is no 者 ("8005) in font nullfont!
+Missing character: There is no 就 ("5C31) in font nullfont!
+Missing character: There is no 构 ("6784) in font nullfont!
+Missing character: There is no 成 ("6210) in font nullfont!
+Missing character: There is no 了 ("4E86) in font nullfont!
+Missing character: There is no 一 ("4E00) in font nullfont!
+Missing character: There is no 个 ("4E2A) in font nullfont!
+Missing character: There is no 微 ("5FAE) in font nullfont!
+Missing character: There is no 正 ("6B63) in font nullfont!
+Missing character: There is no 则 ("5219) in font nullfont!
+Missing character: There is no 系 ("7CFB) in font nullfont!
+Missing character: There is no 综 ("7EFC) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \begin{figure}
+                  [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+! Undefined control sequence.
+l.10        \includegraphics
+                            [width=0.45\textwidth]{fig/正则系综.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no w ("77) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 5 ("35) in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.10        \includegraphics[width=0.45\textwidth]
+                                                  {fig/正则系综.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.10        \includegraphics[width=0.45\textwidth]
+                                                  {fig/正则系综.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no / ("2F) in font null
